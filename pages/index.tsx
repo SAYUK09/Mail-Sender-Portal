@@ -1,8 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import axios from "axios";
 
 export default function Home() {
+  async function sendMails() {
+    try {
+      const ress = await axios.post("/api/sendmail", {});
+
+      console.log(ress);
+    } catch {}
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>SENDING MAILS</h1>
+        <h1 onClick={sendMails}>SENDING MAILS</h1>
       </main>
     </div>
   );
