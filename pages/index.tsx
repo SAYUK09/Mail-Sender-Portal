@@ -6,7 +6,7 @@ import axios from "axios";
 export default function Home() {
   async function sendMails() {
     try {
-      const ress = await axios.post("/api/sendmail", {});
+      const ress = await axios.post("/api/sendmails", {});
 
       console.log(ress);
     } catch {}
