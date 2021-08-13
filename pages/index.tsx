@@ -8,7 +8,6 @@ export default function Home() {
   const [mail, setMail] = useState("");
 
   function inputHandler(e: any) {
-    console.log(e.target.value);
     setMail(e.target.value);
   }
 

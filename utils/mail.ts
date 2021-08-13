@@ -26,6 +26,7 @@ export default class Email {
       templateId: "d-513404a92d8d4768b33bffdb97d36209",
       dynamic_template_data: {
         name: this.name,
+        subject: "Request accepted!",
       },
     };
 
