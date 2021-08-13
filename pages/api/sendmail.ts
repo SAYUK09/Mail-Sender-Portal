@@ -9,10 +9,10 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    await new Email(
-      { email: "sayurikamble962@gmail.com" },
-      "sayuk"
-    ).sendMails();
+    console.log(req.body, "req");
+    await new Email({
+      email: req.body.email,
+    }).sendMails();
 
     res.status(200).json({
       message: "check your mail",
@@ -22,4 +22,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router;
+export = router;

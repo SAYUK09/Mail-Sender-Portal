@@ -10,6 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const server = require("http").Server(app);
 
+app.use(express.json());
+
 nextApp.prepare().then(() => {
   app.use("/api/sendmails", require("./pages/api/sendmail"));
   app.all("*", (req: any, res: any) => handle(req, res));

@@ -2,11 +2,21 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
-
+import { useState } from "react";
+import { Input, Button } from "@chakra-ui/react";
 export default function Home() {
+  const [mail, setMail] = useState("");
+
+  function inputHandler(e: any) {
+    console.log(e.target.value);
+    setMail(e.target.value);
+  }
+
   async function sendMails() {
     try {
-      const ress = await axios.post("/api/sendmails", {});
+      const ress = await axios.post("/api/sendmails", {
+        email: mail,
+      });
 
       console.log(ress);
     } catch {}
@@ -21,7 +31,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 onClick={sendMails}>SENDING MAILS</h1>
+        <h1>SENDING MAILS</h1>
+        <Input onChange={inputHandler} type="text" />
+        <Button onClick={sendMails}>SEND MAIL</Button>
       </main>
     </div>
   );

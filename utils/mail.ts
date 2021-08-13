@@ -8,9 +8,9 @@ export default class Email {
   name: any;
   fromEmail: string;
   fromName: string;
-  constructor(user: any, name: any) {
+  constructor(user: any) {
     this.to = user.email;
-    this.name = name;
+    this.name = "Neo-Reviewerer";
     this.fromEmail = "sayurikamble123@gmail.com";
     this.fromName = "Neog Camp";
   }
@@ -18,6 +18,7 @@ export default class Email {
   async sendMails() {
     const mailOptions = {
       to: this.to,
+      subject: "Request Accepted",
       from: {
         email: this.fromEmail,
         name: this.fromName,
