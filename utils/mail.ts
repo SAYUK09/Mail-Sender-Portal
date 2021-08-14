@@ -1,14 +1,17 @@
-// import sgMail from "@sendgrid/mail";
 const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SendGrid_API);
 
+export interface IUser {
+  email: string;
+}
+
 export default class Email {
-  to: any;
-  name: any;
+  to: string;
+  name: string;
   fromEmail: string;
   fromName: string;
-  constructor(user: any) {
+  constructor(user: IUser) {
     this.to = user.email;
     this.name = "Neo-Reviewerer";
     this.fromEmail = "sayurikamble123@gmail.com";
