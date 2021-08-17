@@ -1,5 +1,5 @@
 import Router from "express";
-import Email from "../../utils/mail";
+import Email from "../utils/mail";
 
 const router = Router();
 

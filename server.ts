@@ -13,7 +13,7 @@ const server = require("http").Server(app);
 app.use(express.json());
 
 nextApp.prepare().then(() => {
-  app.use("/api/sendmails", require("./pages/api/sendmail"));
+  app.use("/api/sendmails", require("./api/sendmail"));
   app.all("*", (req: Request, res: Response) => handle(req, res));
 
   server.listen(PORT, (err: any) => {
