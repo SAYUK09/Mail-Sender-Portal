@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import axios from "axios";
 import { useState } from "react";
 import { Input, Button, Heading } from "@chakra-ui/react";
+import { baseUrl } from "../utils/baseURL";
 export default function Home() {
   const [mail, setMail] = useState("");
 
@@ -13,7 +14,7 @@ export default function Home() {
 
   async function sendMails() {
     try {
-      const ress = await axios.post("/api/sendmails", {
+      const ress = await axios.post(`${baseUrl}/api/sendmails`, {
         email: mail,
       });
 
