@@ -1,10 +1,13 @@
-import { NextApiHandler } from "next";
+import Router from "express";
 import Email from "../../utils/mail";
 
-export const handler: NextApiHandler = async (req, res) => {
-  if (req.method === "GET") {
-    res.json({ msg: "Mehtod not allowed" });
-  }
+const router = Router();
+
+router.get("/", async (req, res) => {
+  res.json({ name: "aka" });
+});
+
+router.post("/", async (req, res) => {
   try {
     console.log(req.body, "req");
     await new Email({
@@ -17,6 +20,6 @@ export const handler: NextApiHandler = async (req, res) => {
   } catch (err) {
     console.log("err", err);
   }
-};
+});
 
-export default handler;
+module.exports = router;
