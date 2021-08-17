@@ -7,6 +7,7 @@ import { Input, Button, Heading } from "@chakra-ui/react";
 import { baseUrl } from "../utils/baseURL";
 export default function Home() {
   const [mail, setMail] = useState("");
+  console.log(baseUrl);
 
   function inputHandler(e: React.ChangeEvent<HTMLInputElement>) {
     setMail(e.target.value);
