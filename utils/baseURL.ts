@@ -1,4 +1,4 @@
 export const baseUrl =
   process.env.NODE_ENV !== "production"
     ? "http://localhost:3000"
-    : "https://mails-sender.vercel.app";
+    : "https://mail-sender-portal.vercel.app";
