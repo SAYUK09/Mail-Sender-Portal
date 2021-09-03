@@ -1,7 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 
 sgMail.setApiKey(process.env.SendGrid_API);
-
 export interface IUser {
   email: string;
 }
@@ -11,6 +10,7 @@ export default class Email {
   name: string;
   fromEmail: string;
   fromName: string;
+
   constructor(user: IUser) {
     this.to = user.email;
     this.name = "Neo-Reviewerer";
