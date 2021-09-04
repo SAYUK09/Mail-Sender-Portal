@@ -1946,10 +1946,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.13.tgz#7dfd9c14661edc65cccd43a29eb454174642370d"
   integrity sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg==
 
-"@types/node@^15.12.4":
-  version "15.14.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.14.7.tgz#29fea9a5b14e2b75c19028e1c7a32edd1e89fe92"
-  integrity sha512-FA45p37/mLhpebgbPWWCKfOisTjxGK9lwcHlJ6XVLfu3NgfcazOJHdYUZCWPMK8QX4LhNZdmfo6iMz9FqpUbaw==
+"@types/node@^16.7.10":
+  version "16.7.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.10.tgz#7aa732cc47341c12a16b7d562f519c2383b6d4fc"
+  integrity sha512-S63Dlv4zIPb8x6MMTgDq5WWRJQe56iBEY0O3SOFA9JrRienkOVDXSXBjjJw6HTNQYSE2JI6GMCR6LVbIMHJVvA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -4233,6 +4233,11 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+generate-password@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/generate-password/-/generate-password-1.6.1.tgz#c2a7a2af74abb353dd855c16b3e13336b9d80272"
+  integrity sha512-JvtWSiN4KVmF6kBFi89Uz9LLN7l/EuGZYiKrIxddFlKcjSgc3D3va0Z5faooNwN85O0VBlt/ZtTdqhbQKhAOyw==
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"

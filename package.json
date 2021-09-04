@@ -16,10 +16,10 @@
     "@emotion/styled": "11",
     "@netlify/plugin-nextjs": "^3.8.0",
     "@sendgrid/mail": "^7.4.5",
-    "@types/mongoose": "^5.11.97",
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.12",
-    "@types/node": "^15.12.4",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.7.10",
     "@types/react": "17.0.16",
     "concurrently": "^6.2.1",
     "cors": "^2.8.5",
@@ -28,11 +28,12 @@
     "express": "^4.17.1",
     "express-react-router": "^3.0.2",
     "framer-motion": "4",
+    "generate-password": "^1.6.1",
     "mongoose": "^5.12.15",
     "next": "11.0.1",
     "react": "17.0.2",
-    "ts-node": "^10.0.0",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "ts-node": "^10.0.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",
